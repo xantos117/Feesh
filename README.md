@@ -2,6 +2,14 @@
 
 An exploration of flocking behaviors in a predator-prey dynamic. Simulates fish schooling behavior in response to predators by using low vision range and a panic state for the fish. Predators follow simple hunting rules.
 
+### OVERVIEW
+---
+There are 5 main components to the project:
+1. The `FeeshSpawner` class handles spawning in `Feesh` and `Predator` instances, updating them, maintaining a balance of weights on parameters, and maintaining slider value synchronization
+2. The `FeeshSettings` class maintains useful constants shared between all `Mover` instances
+3. The `Mover` class serves as a base class for our moving actors, which use many of the same rules. The usages for these functions occur in specific subclasses, so the `Mover` class mainly contains functions to generate steering forces
+4. The `Predator` class uses 2 update behaviors to guide its movement: the random walk, and Seek to the nearest `Feesh`. 
+5. The `Feesh` class has the most complex set of states. It can either be a leader `Feesh`, which ignores the environment and follows a set path, or be a flocking agent in 1 of 2 states, "Normal" or "Panicked". A Normal `Feesh` follows the leader, maintains separation, attempts to cluster and aligns with neighbors. A Panicked `Feesh` flees predators, attempts to travel directly away from them, attempts to swim opposite their direction, and attempts to clump with other `Feesh`. 
 ### TO RUN
 ---
 * Clone repository
@@ -9,6 +17,7 @@ An exploration of flocking behaviors in a predator-prey dynamic. Simulates fish 
 * Open project and run
 
 Alternatively, see the compiled version at xantos117.github.io
+
 
 ### SOURCES
 ---
