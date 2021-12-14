@@ -2,6 +2,8 @@
 
 An exploration of flocking behaviors in a predator-prey dynamic. Simulates fish schooling behavior in response to predators by using low vision range and a panic state for the fish. Predators follow simple hunting rules.
 
+BUILT AND TESTED IN UNITY 2020.3.18f1
+
 ### OVERVIEW
 ---
 There are 5 main components to the project:
