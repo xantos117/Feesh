@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7121a4902458dd4db3a406087532dc4, type: 3}
+  m_Name: Feesh_Settings
+  m_EditorClassIdentifier: 
+  maxSpeed: 5
+  viewDistance: 2
+  avoidance: 0.25742188
+  attraction: 0.1134133
+  alignment: 0.2778809
+  followTheLeader: 0.35128394
+  rotationSpeed: 1
+  viewAngle: 150
+  speedSpringConst: 5
+  wallSpringConst: -5
+  angVel: 1
+  avoidanceRadius: 1
+  fleeWeight: 1
+  reverseWeight: 2
+  centerWeight: 1
+  perpWeight: 3
+  wallBoundary: 15
+  randWalkAngle: 90
+  wanderStrength: 0.1
+  predViewDistance: 5
+  predViewAngle: 110
